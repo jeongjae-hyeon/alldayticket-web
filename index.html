@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>올데이티켓 - 상품권 24시간 즉시 현금화</title>
+  <meta name="description" content="365일 24시간, 상품권 즉시 현금화. 빠른 입금과 최저 수수료 보장!">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="올데이티켓">
+  <meta property="og:description" content="24시간 상담 가능, 전화 또는 카톡으로 빠르게 현금화!">
+  <meta property="og:image" content="https://example.com/thumbnail.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alldayticket.example.com">
+
+  <meta charset="UTF-8">
+  <title>올데이티켓 상세페이지</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      color: #333;
+    }
+
+    .section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section:nth-child(even) {
+      background-color: #f8f5ff;
+    }
+
+    h1, h2 {
+      color: #4b0082;
+    }
+
+    h1 {
+      font-size: 28px;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin-top: 40px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li::before {
+      content: '✔ ';
+      color: #6a1b9a;
+    }
+
+    .button-box {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .button-box a {
+      background-color: #6a1b9a;
+      color: white;
+      padding: 15px 25px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      flex: 1 1 220px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .button-box a:hover {
+      transform: scale(1.05);
+      background-color: #8a2be2;
+    }
+
+    video, img.full-width {
+      width: 100%;
+      max-width: 900px;
+      display: block;
+      margin: 0 auto 40px auto;
+      border-radius: 12px;
+    }
+
+    @media screen and (max-width: 480px) {
+      h1 { font-size: 22px; }
+      h2 { font-size: 18px; }
+      .button-box a {
+        font-size: 14px;
+        padding: 12px 20px;
+      }
+    }
+  </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17123590134"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17123590134');
+  </script>
+
+</head>
+<body>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+function sendToKakao() {
+  const name = document.getElementById("name").value;
+  const phone = document.getElementById("phone").value;
+  const message = encodeURIComponent(`안녕하세요. 상담 요청드립니다.%0A이름: ${name}%0A연락처: ${phone}`);
+  window.open("https://open.kakao.com/o/sRW8eAyh" + message, "_blank");
+}
+</script>
+
+  <script>AOS.init();
+function sendToKakao() {
+  const name = document.getElementById("name").value;
+  const phone = document.getElementById("phone").value;
+  const message = encodeURIComponent(`안녕하세요. 상담 요청드립니다.%0A이름: ${name}%0A연락처: ${phone}`);
+  window.open("https://open.kakao.com/o/sRW8eAyh" + message, "_blank");
+}
+</script>
+
+
+  
+  <style>
+    .custom-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 35px 50px;
+      background-color: #f8f5ff;
+      border-bottom: 1px solid #ccc;
+      gap: 80px;
+      flex-wrap: wrap;
+    }
+    @media (max-width: 768px) {
+      .custom-header {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+      }
+      .custom-header img {
+        height: auto !important;
+        max-width: 90%;
+      }
+    }
+  </style>
+  <div class="custom-header">
+    <div class="logo-box" style="display: flex; align-items: center;">
+      <img src="logo-olldayticket.png" alt="올데이티켓 로고" style="height: 100px; margin-right: 15px;">
+      <span style="font-size: 30px; font-weight: bold; color: #2c2c2c;">올데이티켓 pay</span>
+    </div>
+    <div class="search-guide">
+      <img src="google-search-guide.png" alt="구글검색 예시" style="height: 120px;">
+    </div>
+  </div>
+
+  <video autoplay muted loop playsinline data-aos="fade-up">
+    <source src="hero-banner.mp4" type="video/mp4">
+    브라우저가 비디오를 지원하지 않습니다.
+  </video>
+
+  <div class="section" data-aos="fade-up">
+    <h2 style="text-align:center; color:#6a1b9a;">365일 24시간 상담 가능합니다.</h2>
+    <p style="text-align:center;">부담없이 카카오톡 또는 전화로 문의 주세요^^</p>
+    
+    <form onsubmit="sendToKakao(); return false;" style="max-width: 500px; margin: 40px auto; padding: 20px; background: #f3f3ff; border-radius: 12px;" data-aos="zoom-in">
+      <h2 style="text-align:center; color:#4b0082;">상담 신청</h2>
+      <label>이름</label>
+      <input type="text" id="name" required placeholder="이름을 입력하세요" style="width:100%; padding:10px; margin:10px 0; border-radius:6px; border:1px solid #ccc;">
+      <label>연락처</label>
+      <input type="tel" id="phone" required placeholder="010-5879-5982" style="width:100%; padding:10px; margin:10px 0; border-radius:6px; border:1px solid #ccc;">
+      <button type="submit" style="width:100%; padding:15px; margin-top:10px; background:#6a1b9a; color:white; font-weight:bold; border:none; border-radius:8px;">접수하기</button>
+    </form>
+    <div class="button-box" data-aos="zoom-in">
+
+      <a href="#" onclick="copyToClipboard(); return false;">카카오톡 링크 복사</a>
+      <a href="tel:010-5879-5982">전화 걸기: 010-5879-5982</a>
+    </div>
+  </div>
+
+  <div class="section" data-aos="fade-up"><img src="3.png" alt="고객후기" class="full-width"></div>
+  <div class="section" data-aos="fade-up"><img src="4.png" alt="추천대상" class="full-width"></div>
+  <div class="section" data-aos="fade-up"><img src="5.png" alt="이용 전 주의사항" class="full-width"></div>
+
+
+  <script>
+    function copyToClipboard() {
+      navigator.clipboard.writeText("https://open.kakao.com/o/sRW8eAyh").then(function() {
+        alert("카카오톡 링크가 복사되었습니다!");
+      }, function(err) {
+        alert("복사에 실패했습니다. 수동으로 복사해주세요.");
+      });
+    }
+  
+function sendToKakao() {
+  const name = document.getElementById("name").value;
+  const phone = document.getElementById("phone").value;
+  const message = encodeURIComponent(`안녕하세요. 상담 요청드립니다.%0A이름: ${name}%0A연락처: ${phone}`);
+  window.open("https://open.kakao.com/o/sRW8eAyh" + message, "_blank");
+}
+</script>
+
+
+  <!-- 맨 위로 버튼 -->
+  <button onclick="scrollToTop()" id="topBtn" title="맨 위로" style="display:none;position:fixed;bottom:100px;right:20px;z-index:999;background:#6a1b9a;color:white;padding:12px 18px;border:none;border-radius:50px;cursor:pointer;">▲</button>
+
+  <!-- 하단 고정 상담 버튼 -->
+  <a href="https://open.kakao.com/o/sRW8eAyh" target="_blank" style="position:fixed;bottom:20px;right:20px;background:#ffeb3b;color:#000;padding:12px 20px;border-radius:30px;font-weight:bold;text-decoration:none;z-index:999;box-shadow:0 2px 8px rgba(0,0,0,0.3);">
+    💬 카카오톡 상담
+  </a>
+
+  <script>
+    // 맨 위로 스크롤
+    function scrollToTop() {
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+
+    // 스크롤 감지해서 버튼 노출
+    window.onscroll = function() {
+      const btn = document.getElementById("topBtn");
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    }
+
+    function copyToClipboard() {
+      navigator.clipboard.writeText("https://open.kakao.com/o/sRW8eAyh").then(function() {
+        alert("카카오톡 링크가 복사되었습니다!");
+      }, function(err) {
+        alert("복사에 실패했습니다. 수동으로 복사해주세요.");
+      });
+    }
+
+    function sendToKakao() {
+      const name = document.getElementById("name").value;
+      const phone = document.getElementById("phone").value;
+      const message = encodeURIComponent(`안녕하세요. 상담 요청드립니다.%0A이름: ${name}%0A연락처: ${phone}`);
+      window.open("https://open.kakao.com/o/sRW8eAyh" + message, "_blank");
+    }
+  </script>
+</body>
+
+
+</html>
